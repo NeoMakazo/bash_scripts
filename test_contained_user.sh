@@ -6,7 +6,7 @@
 
 
 # script starts here
-mainFunc(){
+function mainFunc(){
 read -p "Do you already have docker installed? (yes, no)" answer
 if [ $answer == "no" ]; then
   curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - ; \
